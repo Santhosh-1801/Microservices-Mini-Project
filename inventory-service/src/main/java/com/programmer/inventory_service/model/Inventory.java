@@ -10,9 +10,9 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "t_inventory")
-@NoArgsConstructor
 @Getter
 @Setter
+@NoArgsConstructor
 @AllArgsConstructor
 public class Inventory {
 
@@ -20,6 +20,32 @@ public class Inventory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String skuCode;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getSkuCode() {
+        return skuCode;
+    }
+
+    public void setSkuCode(String skuCode) {
+        this.skuCode = skuCode;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
     private Integer quantity;
+
 
 }
