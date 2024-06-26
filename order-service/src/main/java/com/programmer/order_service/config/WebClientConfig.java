@@ -2,6 +2,7 @@ package com.programmer.order_service.config;
 
 
 import io.netty.resolver.DefaultAddressResolverGroup;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
