@@ -3,7 +3,10 @@ package com.programmer.product_service.controller;
 import com.programmer.product_service.dto.ProductRequest;
 import com.programmer.product_service.dto.ProductResponse;
 import com.programmer.product_service.service.ProductService;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,6 +18,7 @@ import java.util.List;
 public class ProductController {
 
     private final ProductService productService;
+
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
